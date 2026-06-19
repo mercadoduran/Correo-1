@@ -1,0 +1,12 @@
+{
+  "name": "correo-1-example",
+  "version": "1.0.0",
+  "description": "Ejemplo mínimo para desplegar Correo-1",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
