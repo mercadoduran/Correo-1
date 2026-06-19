@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: correo-1
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    buildCommand: npm install
+    startCommand: npm start
+    ports:
+      - port: 3000
+        protocol: http
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3000
